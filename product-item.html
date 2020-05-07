@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <!-- Bootstrap CSS -->
+
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/product-popps.css">
+
+    <style>
+        .product-item{
+            height: 150px;
+        }
+        .product-item .no-gutters img{
+            height: 148px;
+        }
+        .product-item .no-gutters .card-body{
+            padding: .5rem;
+        }
+        .product-item .no-gutters .card-body .card-title{
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .product-item .product-link{
+            padding: 47px 0;
+        }
+        .product-item a{
+            font-size: 36px;
+            position: absolute;
+            right: 6px;
+            z-index: 99999;
+        }
+        .product-item a i{
+
+            color: #458aff;
+        }
+        @media (max-width: 575.98px) {
+            .product-item .no-gutters img{
+            }
+            .product-item a{
+                font-size: 36px;
+                position: absolute;
+                z-index: 99999;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--   Header  -->
+<header id="header">
+    <!--    nav    -->
+    <nav id="header-navbar" class="navbar navbar-light">
+        <div class="container-fluid">
+            <div class="navbar-logo">
+                <a href="index.html">
+                    <img class="img-fluid" src="images/logo.png">
+                </a>
+                <a class="mobile-options waves-effect waves-light">
+                    <i class="ti-more"></i>
+                </a>
+            </div>
+            <div class="float-right">
+                <ul class="nav-right">
+                    <li class="header-notification">
+                        <a href="#!" class="waves-effect waves-light mt-2">
+                            <i class="fa fa-bell"></i>
+                            <span class="badge bg-danger"></span>
+                        </a>
+                    </li>
+                    <li class="user-profile header-notification dropdown">
+                        <a href="#!" class="waves-effect waves-light dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/icons8-online_support.png" class="rounded-circle" alt="User-Profile-Image">
+                            <span>Minh Duc</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown animated fadeInRight" x-placement="bottom-end">
+                            <!-- item-->
+                            <div class=" dropdown-header noti-title">
+                                <h6 class="text-overflow m-0" id="nameuser"></h6>
+                            </div>
+
+                            <!-- item-->
+                            <a href="profile.html" class="dropdown-item notify-item">
+                                <i class="fa fa-user-o"></i>
+                                <span>Tài khoản của tôi</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="fa fa-cog"></i>
+                                <span>Cài đặt</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="" id="logout" class="dropdown-item notify-item">
+                                <i class="fa fa-sign-out"></i>
+                                <span>Đăng xuất</span>
+                            </a>
+
+                        </div>
+                    </li>
+                    <li class="header-notification">
+                        <a href="#!" id="rightBar" class="waves-effect waves-light mt-2">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header><!--   End header  -->
+<!--    Start Page header    -->
+<div class="page-header">
+    <div class="page-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="page-header-title text-center mt-3 mb-5">
+                        <h3 class="text-uppercase">Giao hàng siêu nhanh hãy tìm kiếm ngay </h3>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="page-header-search">
+                        <form action="/">
+                            <div class="form-group">
+                                <label for="search" class="text-white">Tìm nhà hàng, đặt chỗ, khuyến mãi...</label>
+                                <span class="float-right mb-2">
+                                    <select class="custom-select custom-select-sm select-search">
+                                        <option>Hà Nội</option>
+                                        <option>Tp HCM</option>
+                                        <option>TP Đà Nẵng</option>
+                                        <option>TP Cà Mau</option>
+                                    </select>
+                                </span>
+                                <input type="text" placeholder="Search.." class="form-search is-search" id="search" name="search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--    End Page header    -->
+
+<!--  Main  -->
+<div class="main pt-5 pb-5">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12  animated fadeInLeft">
+                    <div class="card mb-3 product-item" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 col-sm-4 col-4">
+                                <img src="images/user-bg.jpg" class="card-img">
+                            </div>
+                            <div class="col-md-7 col-sm-7 col-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text </p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="col-md-1 col-sm-1 col-1">
+                                <a href="" class="product-link" id="producpopupid"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12  animated fadeInLeft">
+                    <div class="card mb-3 product-item" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 col-sm-4 col-4">
+                                <img src="images/user-bg.jpg" class="card-img">
+                            </div>
+                            <div class="col-md-7 col-sm-7 col-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to </p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="col-md-1 col-sm-1 col-1">
+                                <a href="" class="product-link"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12  animated fadeInLeft">
+                    <div class="card mb-3 product-item" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 col-sm-4 col-4">
+                                <img src="images/user-bg.jpg" class="card-img">
+                            </div>
+                            <div class="col-md-7 col-sm-7 col-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to </p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="col-md-1 col-sm-1 col-1">
+                                <a href="" class="product-link"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12  animated fadeInLeft">
+                    <div class="card mb-3 product-item" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 col-sm-4 col-4">
+                                <img src="images/user-bg.jpg" class="card-img">
+                            </div>
+                            <div class="col-md-7 col-sm-7 col-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to </p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="col-md-1 col-sm-1 col-1">
+                                <a href="" class="product-link"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div> <!--End main-->
+
+<!--  Footer  -->
+<footer>
+
+</footer>
+<!--  End footer  -->
+<!--  Right bar  -->
+<div class="right-bar animated fadeInRight">
+
+    <div class="rightbar-title">
+        <a href="javascript:void(0);" class="right-bar-toggle float-right">
+            <i class="fa fa fa-times"></i>
+        </a>
+        <h5 class="m-0"> Menu </h5>
+    </div>
+
+    <div class="slimScrollDiv" style="height: 429px;">
+        <div class="slimscroll-menu" style="height: 429px;">
+
+            <!-- Settings -->
+            <div class="">
+                <div class="main-menu-header">
+                    <img class="img-80 img-radius mCS_img_loaded" src="images/logo.png" alt="User-Profile-Image">
+                    <div class="user-details">
+                        <a id="more-details">Minh Duc<i class="fa fa-caret-down"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li class="more-details">
+                            <a href="profile.html"><i class="fa fa-user-o"></i>Thông tin tài khoản</a>
+                            <a href="#!"><i class="fa fa-cog"></i>Cài đặt</a>
+                            <a href="#!"><i class="fa fa-sign-out"></i>Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="p-3">
+                <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="notifications-check" checked="">
+                    <label class="custom-control-label" for="notifications-check">Thông báo</label>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="api-access-check">
+                    <label class="custom-control-label" for="api-access-check">Truy cập API</label>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="auto-updates-check" checked="">
+                    <label class="custom-control-label" for="auto-updates-check">
+                        Cập nhật tự động</label>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="online-status-check" checked="">
+                    <label class="custom-control-label" for="online-status-check">Trạng thái trực tuyến</label>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="auto-payout-check">
+                    <label class="custom-control-label" for="auto-payout-check">Tự động thanh toán</label>
+                </div>
+
+            </div>
+        </div>
+        <div class="slimScrollBar" style="height: 429px; display: none; top: 0px;"></div>
+        <div class="slimScrollRail" style="display: none;"></div>
+    </div>
+</div>
+<!--  End right bar  -->
+<!--  Model add collection  -->
+<div class="modal fade" id="add-collection" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true" style="margin-top: -10px;">×</button>
+                <div class="bootbox-body">
+                    <div>
+                        <div class="panel panel-default">
+                            <h5 class="panel-heading">Tạo thương hiệu mới</h5>
+                            <div class="panel-body">
+                                <form>
+                                    <div class="form-group required" style="margin-top:20px;">
+                                        <label>Tên thương hiệu:</label>
+                                        <input type="text" class="form-control form-control-light" id="tenant_name">
+                                    </div>
+                                    <div class="form-group required">
+                                        <label>Mã thương hiệu:</label>
+                                        <input type="text" class="form-control form-control-light" id="tenant_id" style="text-transform: uppercase;" required="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>Ảnh Logo thương hiệu:</label>
+                                        <div class="input-group input-group-sm">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">https://</span>
+                                            </div>
+                                            <input type="text" id="image_url" data-bind="value:image_url" class="form-control form-control-light" placeholder="Nhập url">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>Tải hình lên</label>
+                                        <div class="input-group">
+                                            <div class="custom-file mb-sm-3">
+                                                <input type="file" class="form-control custom-file-input " accept="file_extension|audio/*|video/*|image/*|media_type" id="fileUpload" aria-describedby="inputGroupFileAddon01">
+                                                <label class="custom-file-label mb-sm-3 form-control-light" for="fileUpload"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button class="btn btn-primary" id="account_register"><strong>Đăng ký</strong></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End model add collection  -->
+<!--       Product - popup         -->
+<div id="product-popups" class="animated  bg-white ">
+    <div class="topping-header-close bg-primary text-white pt-2 pb-2 ">
+        <h4 class="text-center w-75 m-auto">Thêm món </h4>
+        <div class="p-2 rounded-pill position-fixed">
+            <button type="button" class="close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+    </div>
+    <div class="topping-header">
+        <div class="container">
+            <div class="media pt-2 pb-2">
+                <img src="images/48355211_1720537381385129_4542013295174877184_o.jpg" class="mr-3 img-fluid" alt="">
+                <div class="media-body">
+                    <h5 class="mt-0">Sữa tươi trân châu đường đen</h5>
+                    <p>Best Seller</p>
+                    <p class="text-dark">Giá: 43,000đ</p>
+                    <div class="mobile-qty d-flex">
+                        <div class="rounded-circle modbile-qt-">-</div>
+                        <input class="modbile-qt-input" value="1">
+                        <div class="rounded-circle modbile-qts">+</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="topping-scroll">
+        <div class="topping-notes">
+            <div class="container">
+                <div class="note-order">
+                    <input type="text" id="txtNote"  placeholder="Thêm ghi chú..." value="">
+                    <span class="mobile-input-model" data-toggle="modal" data-target="#mobile-product"></span>
+                    <span class="price-order text-md-right"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="topping-category">
+            <div class="container">
+                <div class="topping-category-item">
+                    <div class="topping-name">Chọn size<span class="topping-note"><span>(BẮT BUỘC)</span></span>
+                        <span class="topping-note2 d-md-none d-lg-none d-xl-none d-sm-block"><span>BẮT BUỘC</span></span>
+                    </div>
+
+                    <div class="topping-item">
+                        <div class="row">
+                            <div class="col col-12 col-md-6">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                                            <label class="custom-control-label" for="customCheck">Custom checkbox</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-6">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1">
+                                            <label class="custom-control-label" for="customCheck">Custom checkbox</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="topping-category-item">
+                    <div class="topping-name">Chọn topping <span class="topping-note"></span>
+                    </div>
+                    <div class="topping-item">
+                        <div class="row">
+                            <div class="col col-12 col-md-6">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input"  name="example1">
+                                            <label class="custom-control-label" for="customCheck">Custom checkbox</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-6">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input"  name="example1">
+                                            <label class="custom-control-label" for="customCheck">Custom checkbox</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="topping-category-item">
+                    <div class="topping-name">Chọn topping <span class="topping-note"></span>
+                    </div>
+                    <div class="topping-item">
+                        <div class="row">
+                            <div class="col col-12 col-md-6">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2" name="example1">
+                                            <label class="custom-control-label" for="customCheck">Custom checkbox</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-6">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck4" name="example1">
+                                            <label class="custom-control-label" for="customCheck">Custom checkbox</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topping-footer mt-3 container">
+            <div class="row">
+                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                    <div class="cart-plus-minus">
+                        <div class="numbers-row">
+                            <div onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty > 0 ) result.value--;return false;" class="dec qtybutton">
+                                <i class="fa fa-minus">&nbsp;</i>
+                            </div>
+                            <input type="text" class="qty" title="Qty" value="1" maxlength="12" id="qty" name="qty">
+                            <div onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="inc qtybutton">
+                                <i class="fa fa-plus">&nbsp;</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-6 col-xl-6 ">
+                    <button type="button" class="btn btn-red float-right">Ok&nbsp;+&nbsp;57,000đ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="topping-footer" class="bg-primary text-white pt-2 pb-2 d-md-none d-lg-none d-xl-none">
+        <div class="container">
+            <div class="float-left">
+                <a href="" id="add-to-cart" class="text-white">+ Thêm vào giỏ </a>
+            </div>
+            <div class="float-right">
+                65.000 đ
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+
+<script src="js/wow.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("header-navbar").style.top = "0";
+        } else {
+            document.getElementById("header-navbar").style.top = "-62px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
+</body>
+</html>
